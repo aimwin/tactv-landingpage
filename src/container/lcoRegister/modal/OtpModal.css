@@ -1,0 +1,26 @@
+/* Hide the increment and decrement buttons for number input */
+.custom-number-input::-webkit-outer-spin-button,
+.custom-number-input::-webkit-inner-spin-button {
+  @apply appearance-none m-0;
+}
+
+.custom-number-input {
+  @apply appearance-none;
+  -moz-appearance: textfield; /* Hides the buttons in Firefox */
+}
+
+.custom-otp-field {
+    @apply mx-2 h-10 !w-10 border rounded-md border-gray-400;
+}
+
+.custom-otp-field:first-child {
+    @apply mr-1 ml-0;
+}
+
+@media (max-width: 768px) {
+    .custom-otp-field {
+        width: 32px !important;
+        height: 32px !important;
+        margin: 0 5px;
+    }
+}
